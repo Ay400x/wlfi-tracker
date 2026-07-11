@@ -67,7 +67,7 @@ HTML_TEMPLATE = """
 </head>
 <body>
     <h1>WLFI Wallet Tracker</h1>
-    <p class="subtitle">World Liberty Financial — live on-chain monitor · auto-refreshes every 60s · {{ current_time }}</p>
+    <p class="subtitle">World Liberty Financial — live on-chain monitor · auto-refreshes every 60s · Deployed via Cloud Build · {{ current_time }}</p>
 
     <div class="summary-grid">
         <div class="summary-card">
