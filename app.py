@@ -156,7 +156,7 @@ def format_amount(value_raw, symbol):
 
 def get_token_transfers(address, wallet_name):
     try:
-        url = f"{BASE_URL}?chainid=1&module=account&action=tokentx&address={address}&startblock=0&endblock=99999999&sort=desc&apikey={ETHERSCAN_API_KEY}"
+        url = f"{BASE_URL}?chainid=1&module=account&action=tokentx&address={address}&startblock=0&endblock=99999999&sort=desc&page=1&offset=10&apikey={ETHERSCAN_API_KEY}"
         response = requests.get(url, timeout=10)
         data = response.json()
 
