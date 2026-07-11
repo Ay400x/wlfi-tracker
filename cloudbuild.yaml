@@ -17,7 +17,6 @@ steps:
       - '--region=us-central1'
       - '--platform=managed'
       - '--allow-unauthenticated'
-      - '--set-env-vars=ETHERSCAN_API_KEY=$$ETHERSCAN_API_KEY'
       - '--service-account=cloud-build-runner@$PROJECT_ID.iam.gserviceaccount.com'
 
     secretEnv: ['ETHERSCAN_API_KEY']
