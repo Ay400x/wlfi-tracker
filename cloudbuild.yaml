@@ -23,7 +23,7 @@ steps:
       - '-c'
       - |
         IMAGE_DIGEST=$(cat /workspace/image-digest.txt)
-        gcloud container binauthz attestations sign-and-create \
+        gcloud beta container binauthz attestations sign-and-create \
           --artifact-url="$$IMAGE_DIGEST" \
           --attestor=wlfi-attestor \
           --attestor-project=$PROJECT_ID \
