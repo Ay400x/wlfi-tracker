@@ -1,0 +1,13 @@
+admissionWhitelistPatterns:
+- namePattern: gcr.io/google_containers/*
+- namePattern: gcr.io/google-containers/*
+- namePattern: k8s.gcr.io/*
+- namePattern: gke.gcr.io/*
+- namePattern: gcr.io/stackdriver-agents/*
+defaultAdmissionRule:
+  evaluationMode: REQUIRE_ATTESTATION
+  enforcementMode: ENFORCED_BLOCK_AND_AUDIT_LOG
+  requireAttestationsBy:
+  - projects/professional-456081/attestors/wlfi-attestor
+globalPolicyEvaluationMode: ENABLE
+name: projects/professional-456081/policy
